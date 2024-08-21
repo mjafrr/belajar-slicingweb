@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partner</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body class="font-poppins bg-[#a8bcbd]">
+    <nav class="w-full bg-white shadow z-40 fixed">
+      <div class="container md:max-w-6xl mx-auto flex px-2 overflow-hidden">
+        <div class="logo h-16 overflow-hidden flex items-center">
+          <img src="/images/logo1.png" alt="" class="w-18 h-12" />
+        </div>
+        <div class="w-full md:h-full relative">
+          <ul class="hidden md:flex justify-center items-center">
+            <li
+              class="my-auto text-sm font-semibold hover:bg-slate-300 transition-all duration-500 p-6"
+            >
+              <a class="text-gray-800 hover:text-gray-600" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li
+              class="my-auto text-sm font-semibold hover:bg-slate-300 transition-all duration-500 p-6"
+            >
+              <a class="text-gray-800 hover:text-gray-600" href="about.html"
+                >About Us</a
+              >
+            </li>
+            <li
+              class="my-auto text-sm font-semibold hover:bg-slate-300 transition-all duration-500 p-6"
+            >
+              <a class="text-gray-800 hover:text-gray-600" href="partner.html"
+                >Patner</a
+              >
+            </li>
+            <li
+              class="my-auto text-sm font-semibold hover:bg-slate-300 transition-all duration-500 p-6"
+            >
+              <a class="text-gray-800 hover:text-gray-600" href="service.html"
+                >Service</a
+              >
+            </li>
+            <li
+              class="my-auto text-sm font-semibold hover:bg-slate-300 transition-all duration-500 p-6"
+            >
+              <a class="text-gray-800 hover:text-gray-600" href="gallery.html"
+                >Galeri</a
+              >
+            </li>
+            <li
+              class="my-auto text-sm font-semibold hover:bg-slate-300 transition-all duration-500 p-6"
+            >
+              <a class="text-gray-800 hover:text-gray-600" href="info.html"
+                >Info</a
+              >
+            </li>
+            <li
+              class="my-auto text-sm font-semibold hover:bg-slate-300 transition-all duration-500 p-6"
+            >
+              <a class="text-gray-800 hover:text-gray-600" href="">Karir</a>
+            </li>
+            <li
+              class="my-auto text-sm font-semibold hover:bg-slate-300 transition-all duration-500 p-6"
+            >
+              <a class="text-gray-800 hover:text-gray-600" href="">Kontak</a>
+            </li>
+          </ul>
+        </div>
+        <button
+          onclick="openLogin()"
+          class="hidden md:flex bg-[#018491] text-[8px] md:text-xs lg:text-lg text-white font-semibold py-1 px-2 w-fit h-fit rounded-full my-auto"
+        >
+          Masuk/Daftar
+        </button>
+
+        <div
+          onclick="openNavbar()"
+          class="toggle h-16 flex items-center md:hidden"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 fill-[#02546480] cursor-pointer"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M228,128a12,12,0,0,1-12,12H40a12,12,0,0,1,0-24H216A12,12,0,0,1,228,128ZM40,76H216a12,12,0,0,0,0-24H40a12,12,0,0,0,0,24ZM216,180H40a12,12,0,0,0,0,24H216a12,12,0,0,0,0-24Z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </nav>
+    <aside
+      class="w-full h-screen bg-white bg-opacity-90 z-50 fixed md:hidden transition-all duration-200 ease-in-out translate-x-full"
+    >
+      <div
+        class="content backdrop-blur-sm h-full flex items-center justify-center relative"
+      >
+        <button onclick="closeNavbar()" class="absolute right-4 top-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="fill-[#018491] w-10 h-10"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M208.49,191.51a12,12,0,0,1-17,17L128,145,64.49,208.49a12,12,0,0,1-17-17L111,128,47.51,64.49a12,12,0,0,1,17-17L128,111l63.51-63.52a12,12,0,0,1,17,17L145,128Z"
+            ></path>
+          </svg>
+        </button>
+
+        <ul class="flex flex-col text-center w-full">
+          <li class="hover:bg-slate-300 w-full transition-all duration-500 p-4">
+            <a class="text-xs text-[#018491] font-semibold" href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="hover:bg-slate-300 w-full transition-all duration-500 p-4">
+            <a class="text-xs text-[#018491] font-semibold" href="about.html"
+              >About Us</a
+            >
+          </li>
+          <li class="hover:bg-slate-300 w-full transition-all duration-500 p-4">
+            <a class="text-xs text-[#018491] font-semibold" href="partner.html"
+              >Patner</a
+            >
+          </li>
+          <li class="hover:bg-slate-300 w-full transition-all duration-500 p-4">
+            <a class="text-xs text-[#018491] font-semibold" href="service.html"
+              >Service</a
+            >
+          </li>
+          <li class="hover:bg-slate-300 w-full transition-all duration-500 p-4">
+            <a class="text-xs text-[#018491] font-semibold" href="gallery.html"
+              >Galeri</a
+            >
+          </li>
+          <li class="hover:bg-slate-300 w-full transition-all duration-500 p-4">
+            <a class="text-xs text-[#018491] font-semibold" href="info.html"
+              >Info</a
+            >
+          </li>
+          <li class="hover:bg-slate-300 w-full transition-all duration-500 p-4">
+            <a class="text-xs text-[#018491] font-semibold" href="">Karir</a>
+          </li>
+          <li class="hover:bg-slate-300 w-full transition-all duration-500 p-4">
+            <a class="text-xs text-[#018491] font-semibold" href="">Kontak</a>
+          </li>
+          <li>
+            <button
+              onclick="openLogin()"
+              class="md:flex bg-[#018491] text-[8px] md:text-xs lg:text-lg text-white font-semibold py-1 px-2 w-fit h-fit rounded-full my-auto"
+            >
+              Masuk/Daftar
+            </button>
+          </li>
+        </ul>
+      </div>
+          
+    </aside>
+    <section
+      class="login w-full h-screen bg-slate-700 translate-y-full bg-opacity-90 fixed z-50 transition-all duration-500 ease-in-out py-16"
+    >
+      <div
+        class="container flex flex-col md:flex-row w-[820px] gap-8 mx-auto p-6 py-24 bg-white rounded-2xl relative pr-14"
+      >
+        <button onclick="closeLogin()" class="absolute top-2 right-2 p-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="#000000"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="image w-full bg-[#D9D9D9] px-20 py-20 rounded-2xl hidden md:flex"
+        >
+          <img src="images/gambar-login.png" alt="" />
+        </div>
+        <div class="caption flex flex-col gap-3 max-w-xl md:w-full">
+          <h2 class="text-2xl font-bold">Sign in</h2>
+          <p class="text-sm">Email Addres</p>
+          <form action="">
+            <input type="email" class="bg-[#D9D9D9] w-full p-2 rounded-full" />
+          </form>
+          <p class="text-sm">Password</p>
+          <form action="">
+            <input type="email" class="bg-[#D9D9D9] w-full p-2 rounded-full" />
+          </form>
+          <p class="text-right text-16-[px] opacity-[50%]">Lupa Password</p>
+
+          <div class="sigin flex flex-col gap-3">
+            <button
+              class="bg-[#018491] opacity-[75%] text-sm text-white p-2 rounded-full hover:bg-[#1b747c] transition-all duration-200 ease-in-out"
+            >
+              Sign In
+            </button>
+            <button
+              onclick="openAccount()"
+              class="bg-[#D9D9D9] text-black opacity-[75%] text-sm font-semibold p-2 rounded-full hover:bg-[#838383] transition-all duration-200 ease-in-out text-center"
+            >
+              Create New Account
+            </button>
+            <button
+              class="flex justify-center p-2 bg-[#D9D9D9] text-black opacity-[75%] text-sm font-semibold gap-2 rounded-full hover:bg-[#838383] transition-all duration-200 ease-in-out"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                preserveAspectRatio="xMidYMid"
+                viewBox="0 0 256 262"
+                id="google"
+                class="my-auto"
+              >
+                <path
+                  fill="#4285F4"
+                  d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027"
+                ></path>
+                <path
+                  fill="#34A853"
+                  d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1"
+                ></path>
+                <path
+                  fill="#FBBC05"
+                  d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782"
+                ></path>
+                <path
+                  fill="#EB4335"
+                  d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251"
+                ></path>
+              </svg>
+              masuk/Daftar
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="newaccount w-full h-screen bg-slate-700 translate-y-full bg-opacity-90 fixed z-50 transition-all duration-500 ease-in-out py-16"
+    >
+      <div
+        class="container flex flex-col md:flex-row w-[850px] gap-8 mx-auto p-6 py-24 bg-white rounded-3xl relative pr-14"
+      >
+        <button onclick="closeAccount()" class="absolute top-2 right-2 p-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            fill="#000000"
+            viewBox="0 0 256 256"
+          >
+            <path
+              d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"
+            ></path>
+          </svg>
+        </button>
+        <div
+          class="image w-full h-[396px] bg-[#D9D9D9] px-20 py-20 items-center rounded-2xl hidden md:flex"
+        >
+          <img src="images/gambar-login.png" alt="" class="w-fit" />
+        </div>
+        <div class="caption flex flex-col gap-3 max-w-xl md:w-full -mt-10">
+          <h2 class="text-2xl font-semibold">NEW ACCOUNT</h2>
+          <p class="text-sm">
+            Hi, Ayo bergabung bersama kami menjadi mitra Insania Sinergia
+          </p>
+          <p class="text-sm">Nama</p>
+          <form action="">
+            <input type="email" class="bg-[#D9D9D9] w-full p-2 rounded-full" />
+          </form>
+          <p class="text-sm">Alamat Email</p>
+          <form action="">
+            <input type="email" class="bg-[#D9D9D9] w-full p-2 rounded-full" />
+          </form>
+          <p class="text-sm">Password</p>
+          <form action="">
+            <input type="email" class="bg-[#D9D9D9] w-full p-2 rounded-full" />
+          </form>
+          <p class="text-sm">KonfirmasiPassword</p>
+          <form action="">
+            <input type="email" class="bg-[#D9D9D9] w-full p-2 rounded-full" />
+          </form>
+
+          <button
+            class="bg-[#018491] opacity-[75%] text-sm text-white p-2 rounded-full hover:bg-[#1b747c] transition-all duration-200 ease-in-out"
+          >
+            Buat Akun
+          </button>
+          <button
+            class="flex justify-center p-2 bg-[#D9D9D9] text-black opacity-[75%] text-sm font-semibold gap-2 rounded-full hover:bg-[#838383] transition-all duration-200 ease-in-out"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              preserveAspectRatio="xMidYMid"
+              viewBox="0 0 256 262"
+              id="google"
+              class="my-auto"
+            >
+              <path
+                fill="#4285F4"
+                d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027"
+              ></path>
+              <path
+                fill="#34A853"
+                d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1"
+              ></path>
+              <path
+                fill="#FBBC05"
+                d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782"
+              ></path>
+              <path
+                fill="#EB4335"
+                d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251"
+              ></path>
+            </svg>
+            Daftar dengan Google
+          </button>
+
+          <p class="text-sm">
+            Sudah punya akun?
+            <span class="text-sky-500 cursor-pointer hover:text-sky-600"
+              >login</span
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <div
+      class="container h-fit mx-auto flex justify-center items-center px-4 py-16"
+    >
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 md:grid-rows-1 md:grid-cols-4 items-center mx-auto gap-6 py-10 md:py-16"
+      >
+        <img src="images/partner-1.png" alt="" class="mx-auto" />
+        <img src="/images/partner-2.png" alt="" class="mx-auto" />
+        <img src="/images/partner-3.png" alt="" class="mx-auto" />
+        <img src="/images/partner-4.png" alt="" class="mx-auto" />
+      </div>
+    </div>
+    <footer class="bg-[#80A9B1] w-full h-fit p-4 -mb-10">
+      <div
+        class="grid grid-rows-1 sm:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 lg:grid-rows-1 gap-4"
+      >
+        <div
+          class="flex flex-col text-center p-4 rounded-lg shadow-sm items-start"
+        >
+          <img src="/images/logo1.png" alt="" class="h-8 md:h-10 mt-4" />
+          <div class="flex flex-row">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#ffffff"
+              viewBox="0 0 256 256"
+              class="w-6 h-6 mt-5 mr-2"
+            >
+              <path
+                d="M219.31,108.68l-80-80a16,16,0,0,0-22.62,0l-80,80A15.87,15.87,0,0,0,32,120v96a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V160h32v56a8,8,0,0,0,8,8h64a8,8,0,0,0,8-8V120A15.87,15.87,0,0,0,219.31,108.68ZM208,208H160V152a8,8,0,0,0-8-8H104a8,8,0,0,0-8,8v56H48V120l80-80,80,80Z"
+              ></path>
+            </svg>
+            <p
+              class="text-left mt-6 text-xs md:text-sm text-white font-semibold"
+            >
+              Jl. Perintis Kemerdekaan No.59, Kota Makassar
+            </p>
+          </div>
+          <div class="flex flex-row">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#ffffff"
+              viewBox="0 0 256 256"
+              class="w-6 h-6 mt-5 mr-2"
+            >
+              <path
+                d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"
+              ></path>
+            </svg>
+            <p
+              class="text-left mt-4 text-xs md:text-sm text-white font-semibold"
+            >
+              +6281-2345-6782 <br />
+              insaniasinergia@gmail.com
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex flex-col text-center p-4 rounded-lg shadow-sm items-start"
+        >
+          <p
+            class="text-left mt-2 text-xs md:text-sm text-white mb-8 font-semibold"
+          >
+            Layanan Insania Sinergia
+          </p>
+          <p class="text-left mt-2 text-xs md:text-sm text-white font-semibold">
+            Jasa Pembukuan
+          </p>
+          <p class="text-left mt-2 text-xs md:text-sm text-white font-semibold">
+            Jasa Pendampingan
+          </p>
+          <p class="text-left mt-2 text-xs md:text-sm text-white font-semibold">
+            Konsultasi Pajak
+          </p>
+          <p class="text-left mt-2 text-xs md:text-sm text-white font-semibold">
+            Pembuatan dan Perubahan akta
+          </p>
+          <p class="text-left mt-2 text-xs md:text-sm text-white font-semibold">
+            Kuasa hukum pengadilan pajak
+          </p>
+        </div>
+        <div
+          class="flex flex-col text-center p-4 rounded-lg shadow-sm items-start"
+        >
+          <p
+            class="text-left mt-2 text-xs md:text-sm text-white font-semibold mb-8"
+          >
+            Sumber Data
+          </p>
+          <p class="text-left mt-2 text-xs md:text-sm text-white font-semibold">
+            FAQ
+          </p>
+          <p class="text-left mt-2 text-xs md:text-sm text-white font-semibold">
+            Studi Kasus
+          </p>
+        </div>
+        <div
+          class="flex flex-col text-center p-4 rounded-lg shadow-sm items-start"
+        >
+          <p
+            class="text-left mt-2 text-xs md:text-sm text-white font-semibold mb-8"
+          >
+            Company
+          </p>
+          <p class="text-left mt-2 text-xs md:text-sm text-white font-semibold">
+            About
+          </p>
+          <p class="text-left mt-2 text-xs md:text-sm text-white font-semibold">
+            Contact
+          </p>
+          <p class="text-left mt-2 text-xs md:text-sm text-white font-semibold">
+            Careers
+          </p>
+          <p class="text-left mt-2 text-xs md:text-sm text-white font-semibold">
+            Youtube
+          </p>
+          <p class="text-left mt-2 text-xs md:text-sm text-white font-semibold">
+            Instagram
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const sidebar = document.querySelector("aside");
+      const login = document.querySelector(".login");
+      const newaccount = document.querySelector(".newaccount");
+
+      function openNavbar() {
+        sidebar.classList.add("translate-x-0");
+        sidebar.classList.remove("translate-x-full");
+      }
+      function closeNavbar() {
+        sidebar.classList.remove("translate-x-0");
+        sidebar.classList.add("translate-x-full");
+      }
+      function openLogin() {
+        login.classList.add("translate-y-0");
+        login.classList.remove("translate-y-full");
+      }
+      function closeLogin() {
+        login.classList.remove("translate-y-0");
+        login.classList.add("translate-y-full");
+      }
+      function openAccount() {
+        newaccount.classList.add("translate-y-0");
+        newaccount.classList.remove("translate-y-full");
+      }
+      function closeAccount() {
+        newaccount.classList.remove("translate-y-0");
+        newaccount.classList.add("translate-y-full");
+      }
+    </script>
+  </body>
+</html>
